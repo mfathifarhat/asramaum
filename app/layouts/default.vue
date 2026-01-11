@@ -36,16 +36,16 @@ onUnmounted(() => {
     </button>
 
     <div class="hidden md:flex space-x-8 text-sm">
-      <RouterLink to="/" class="font-semibold ">Beranda</RouterLink>
-      <RouterLink to="/" class="font-semibold ">Tentang</RouterLink>
-      <RouterLink to="/" class="font-semibold ">Fasilitas</RouterLink>
-      <RouterLink to="/" class="font-semibold ">Blog</RouterLink>
-      <RouterLink to="/" class="font-semibold ">Informasi & Layanan</RouterLink>
-      <RouterLink to="/" class="font-semibold ">Kontak</RouterLink>
+      <NuxtLink to="/" class="font-semibold ">Beranda</NuxtLink>
+      <NuxtLink to="/tentang" class="font-semibold ">Tentang</NuxtLink>
+      <NuxtLink to="/" class="font-semibold ">Fasilitas</NuxtLink>
+      <NuxtLink to="/blog" class="font-semibold ">Blog</NuxtLink>
+      <NuxtLink to="/" class="font-semibold ">Informasi & Layanan</NuxtLink>
+      <NuxtLink to="/" class="font-semibold ">Kontak</NuxtLink>
     </div>
   </nav>
 
-  <div class=" pt-[72.8px]">
+  <div class=" pt-[72.8px] px-4 max-w-7xl mx-auto">
     <slot />
   </div>
 
@@ -82,7 +82,7 @@ onUnmounted(() => {
 
       <hr class="mt-4 w-full">
 
-      <span>Copyright ©2025 Asrama Universitas Negeri Malang</span>
+      <span class="text-gray-500">Copyright ©2025 Asrama Universitas Negeri Malang</span>
     </div>
   </footer>
 </template>
